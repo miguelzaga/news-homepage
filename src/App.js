@@ -3,42 +3,66 @@ import { useState } from "react";
 function App() {
   return (
     <div>
-  Home
-  New
-  Popular
-  Trending
-  Categories
+      <header>Home New Popular Trending Categories</header>
 
-  The Bright Future of Web 3.0?
+      <main>
+        <section>
+          <h1>The Bright Future of Web 3.0?</h1>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
 
-  Read more
+          <button>Read more</button>
+        </section>
 
-  New 
+        <section>
+          <h2>New</h2>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+          <article>
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </article>
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+          <article>
+            <h3>The Downsides of AI Artistry</h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </article>
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+          <article>
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </article>
+        </section>
+      </main>
 
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
+      <footer>
+        <article>
+          <h4>01</h4>
+          <h5>Reviving Retro PCs</h5>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </article>
 
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
+        <article>
+          <h4>02</h4>
+          <h5>Top 10 Laptops of 2022</h5>
+          <p>Our best picks for various needs and budgets.</p>
+        </article>
 
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
+        <article>
+          <h4>03</h4>
+          <h5>The Growth of Gaming</h5>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </article>
+      </footer>
     </div>
   );
 }
