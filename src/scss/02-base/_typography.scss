@@ -1,1 +1,24 @@
 @use "./../01-abstracts/" as *;
+
+@font-face {
+  font-family: "Inter";
+  src: url("/src/assets/fonts/Inter-VariableFont_slnt,wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 400 800;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: $gunmetal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $dark-space-blue;
+  font-weight: 800;
+}
