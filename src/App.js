@@ -7,23 +7,32 @@ import imageRetroPcs from "/src/assets/images/image-retro-pcs.jpg";
 import imageGamingGrowth from "/src/assets/images/image-gaming-growth.jpg";
 import imageTopLaptops from "/src/assets/images/image-top-laptops.jpg";
 
+import { useState } from "react";
+
 function App() {
+  const [navbar, setNavbar] = useState(false);
   return (
     <div>
       <header className="header">
         <img className="header__logo" src={logo} alt="logo" />
         <button className="header__menu">
-          <img src={iconMenu} alt="" />
+          <img src={iconMenu} alt="open menu" />
         </button>
-        <nav className="header__navbar" style={{ display: "none" }}>
-          <ul>
+        <nav className={`header__navbar ${navbar ? "header__navbar--show" : ""}`}>
+    <div className="header__container">
+        <button className="header__menu-close">
+          <img src={iconMenuClose} alt="close menu" />
+        </button>
+          <ul className="header__list">
             <li>Home</li>
             <li>New</li>
             <li>Popular</li>
             <li>Trending</li>
             <li>Categories</li>
           </ul>
+    </div>
         </nav>
+
       </header>
 
       <main>

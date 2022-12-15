@@ -14,5 +14,47 @@
     max-width: 40px;
     border: none;
     padding: 0;
+    background: none;
   }
+
+  &__navbar {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #{$dark-space-blue}80;
+     &--show {
+       display: block;
+     }
+  }
+
+  &__container {
+    background-color: $almost-white;
+    margin-left: auto;
+    max-width: 256px;
+    height: 100%;
+    padding: 144px 24px;
+  }
+
+  &__menu-close {
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    max-width: 30px;
+    border: none;
+    padding: 0;
+    background: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: rem(18px);
+    line-height: 1.33;
+    color: $dark-space-blue;
+  }
+
 }
+
