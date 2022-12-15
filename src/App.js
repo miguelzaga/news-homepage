@@ -1,9 +1,25 @@
-import { useState } from "react";
+import logo from "/src/assets/images/logo.svg";
+import iconMenu from "/src/assets/images/icon-menu.svg";
+import iconMenuClose from "/src/assets/images/icon-menu-close.svg";
 
 function App() {
   return (
     <div>
-      <header>Home New Popular Trending Categories</header>
+      <header className="header">
+        <img className="header__logo" src={logo} alt="logo" />
+        <button className="header__menu">
+          <img src={iconMenu} alt="" />
+        </button>
+        <nav className="header__navbar" style={{ display: "none" }}>
+          <ul>
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+        </nav>
+      </header>
 
       <main>
         <section>
