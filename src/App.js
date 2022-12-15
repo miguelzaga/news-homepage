@@ -1,6 +1,8 @@
 import logo from "/src/assets/images/logo.svg";
 import iconMenu from "/src/assets/images/icon-menu.svg";
 import iconMenuClose from "/src/assets/images/icon-menu-close.svg";
+import imageWebMobile from "/src/assets/images/image-web-3-mobile.jpg";
+import imageWebDesktop from "/src/assets/images/image-web-3-desktop.jpg";
 
 function App() {
   return (
@@ -22,16 +24,24 @@ function App() {
       </header>
 
       <main>
-        <section>
-          <h1>The Bright Future of Web 3.0?</h1>
+        <section className="hero">
+          <picture className="hero__img">
+            <source srcSet={imageWebDesktop} media="(min-width: 1024px)" />
+            <img
+              className=""
+              src={imageWebMobile}
+              alt="colorful illustration"
+            />
+          </picture>
+          <h1 className="hero__title">The Bright Future of Web 3.0?</h1>
 
-          <p>
+          <p className="hero__text">
             We dive into the next evolution of the web that claims to put the
             power of the platforms back into the hands of the people. But is it
             really fulfilling its promise?
           </p>
 
-          <button>Read more</button>
+          <button className="hero__btn">Read more</button>
         </section>
 
         <section>

@@ -1,0 +1,36 @@
+@use "./../01-abstracts/" as *;
+
+.hero {
+  display: grid;
+  padding: 0 16px;
+  margin-bottom: 64px;
+
+  &__img {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: rem(40px);
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-size: rem(15px);
+    line-height: 1.73;
+    margin-bottom: 24px;
+  }
+
+  &__btn {
+    color: $almost-white;
+    background-color: $light-vermillion;
+    border: none;
+    max-width: 185px;
+    height: 48px;
+    font-weight: 700;
+    font-size: rem(14px);
+    line-height: 1.71;
+    letter-spacing: rem(4.375px);
+    text-transform: uppercase;
+  }
+}
