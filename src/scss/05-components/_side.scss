@@ -1,0 +1,36 @@
+@use "./../01-abstracts/" as *;
+
+.side {
+  padding: 24px 20px;
+  margin: 64px 16px;
+  background-color: $dark-space-blue;
+  color: $silver;
+
+  &__title {
+    color: $yellow;
+    font-weight: 700;
+    font-size: rem(32px);
+    line-height: 1;
+    margin-bottom: 35px;
+  }
+
+  &__article {
+    margin-top: 31px;
+    &:not(:last-child) {
+      border-bottom: 1px solid $gunmetal;
+      padding-bottom: 29px;
+    }
+  }
+
+  &__header {
+    color: $almost-white;
+    font-size: rem(20px);
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font-size: rem(15px);
+    line-height: 1.73;
+  }
+}
