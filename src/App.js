@@ -3,6 +3,9 @@ import iconMenu from "/src/assets/images/icon-menu.svg";
 import iconMenuClose from "/src/assets/images/icon-menu-close.svg";
 import imageWebMobile from "/src/assets/images/image-web-3-mobile.jpg";
 import imageWebDesktop from "/src/assets/images/image-web-3-desktop.jpg";
+import imageRetroPcs from "/src/assets/images/image-retro-pcs.jpg";
+import imageGamingGrowth from "/src/assets/images/image-gaming-growth.jpg";
+import imageTopLaptops from "/src/assets/images/image-top-laptops.jpg";
 
 function App() {
   return (
@@ -49,7 +52,9 @@ function App() {
 
           <article className="side__article">
             <h3 className="side__header">Hydrogen VS Electric Cars</h3>
-            <p className="side__text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <p className="side__text">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
           </article>
 
           <article className="side__article">
@@ -70,23 +75,50 @@ function App() {
         </section>
       </main>
 
-      <footer>
-        <article>
-          <h4>01</h4>
-          <h5>Reviving Retro PCs</h5>
-          <p>What happens when old PCs are given modern upgrades?</p>
+      <footer className="bottom">
+        <article className="bottom__article">
+          <img
+            className="bottom__img"
+            src={imageRetroPcs}
+            alt="a bunch of old electronics"
+          />
+          <div className="bottom__container">
+            <h4 className="bottom__number">01</h4>
+            <h5 className="bottom__title">Reviving Retro PCs</h5>
+            <p className="bottom__text">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
         </article>
 
-        <article>
-          <h4>02</h4>
-          <h5>Top 10 Laptops of 2022</h5>
-          <p>Our best picks for various needs and budgets.</p>
+        <article className="bottom__article">
+          <img
+            className="bottom__img"
+            src={imageTopLaptops}
+            alt="a closeup of a keyboard"
+          />
+          <div className="bottom__container">
+            <h4 className="bottom__number">02</h4>
+            <h5 className="bottom__title">Top 10 Laptops of 2022</h5>
+            <p className="bottom__text">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
         </article>
 
-        <article>
-          <h4>03</h4>
-          <h5>The Growth of Gaming</h5>
-          <p>How the pandemic has sparked fresh opportunities.</p>
+        <article className="bottom__article">
+          <img
+            className="bottom__img"
+            src={imageGamingGrowth}
+            alt="a ps5 controller in the air over an open hand"
+          />
+          <div className="bottom__container">
+            <h4 className="bottom__number">03</h4>
+            <h5 className="bottom__title">The Growth of Gaming</h5>
+            <p className="bottom__text">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
         </article>
       </footer>
     </div>
