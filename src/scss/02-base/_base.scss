@@ -3,3 +3,11 @@
 body {
   background-color: #f2f2f2;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: $light-vermillion;
+  }
+}

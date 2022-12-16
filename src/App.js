@@ -15,24 +15,28 @@ function App() {
     <div>
       <header className="header">
         <img className="header__logo" src={logo} alt="logo" />
-        <button className="header__menu">
+        <button onClick={() => setNavbar(true)} className="header__menu">
           <img src={iconMenu} alt="open menu" />
         </button>
-        <nav className={`header__navbar ${navbar ? "header__navbar--show" : ""}`}>
-    <div className="header__container">
-        <button className="header__menu-close">
-          <img src={iconMenuClose} alt="close menu" />
-        </button>
-          <ul className="header__list">
-            <li>Home</li>
-            <li>New</li>
-            <li>Popular</li>
-            <li>Trending</li>
-            <li>Categories</li>
-          </ul>
-    </div>
+        <nav
+          className={`header__navbar ${navbar ? "header__navbar--open" : ""}`}
+        >
+          <div className="header__container">
+            <button
+              onClick={() => setNavbar(false)}
+              className="header__menu-close"
+            >
+              <img src={iconMenuClose} alt="close menu" />
+            </button>
+            <ul className="header__list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">New</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Trending</a></li>
+              <li><a href="#">Categories</a></li>
+            </ul>
+          </div>
         </nav>
-
       </header>
 
       <main>
