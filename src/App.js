@@ -39,7 +39,7 @@ function App() {
         </nav>
       </header>
 
-      <main>
+      <main className="main">
         <section className="hero">
           <picture className="hero__img">
             <source srcSet={imageWebDesktop} media="(min-width: 1024px)" />

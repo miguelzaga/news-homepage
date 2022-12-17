@@ -1,0 +1,15 @@
+@use "./../01-abstracts/" as *;
+
+.main {
+  display: grid;
+  gap: 64px;
+  margin: auto;
+  margin-bottom: 64px;
+  max-width: calc(1110px + 32px);
+  padding: 0 16px;
+  @include breakpoint($md){
+    grid-template-columns: 730fr 350fr;
+    gap: 30px;
+  }
+}
+
