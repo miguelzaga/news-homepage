@@ -2,17 +2,27 @@
 
 .bottom {
   padding: 0 16px 80px;
+  max-width: calc(1110px + 32px);
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   gap: 32px;
+  @include breakpoint($md) {
+    gap: 30px;
+    padding-bottom: 129px;
+  }
 
   &__article {
     display: flex;
     gap: 24px;
+    @include breakpoint(768px) {
+    flex-basis: 350px;
+    }
   }
 
   &__img {
     max-width: 100px;
+    height: fit-content;
   }
 
   &__number {
