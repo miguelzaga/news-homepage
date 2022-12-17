@@ -10,6 +10,7 @@
   @include breakpoint($md){
     grid-template-columns: 730fr 350fr;
     gap: 30px;
+  margin-bottom: 71px;
   }
 }
 
