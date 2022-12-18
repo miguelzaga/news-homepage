@@ -29,11 +29,21 @@ function App() {
               <img src={iconMenuClose} alt="close menu" />
             </button>
             <ul className="header__list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">New</a></li>
-              <li><a href="#">Popular</a></li>
-              <li><a href="#">Trending</a></li>
-              <li><a href="#">Categories</a></li>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">New</a>
+              </li>
+              <li>
+                <a href="#">Popular</a>
+              </li>
+              <li>
+                <a href="#">Trending</a>
+              </li>
+              <li>
+                <a href="#">Categories</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -64,14 +74,18 @@ function App() {
           <h2 className="side__title">New</h2>
 
           <article className="side__article">
-            <h3 className="side__header">Hydrogen VS Electric Cars</h3>
+            <h3 className="side__header">
+              <a href="#">Hydrogen VS Electric Cars</a>
+            </h3>
             <p className="side__text">
               Will hydrogen-fueled cars ever catch up to EVs?
             </p>
           </article>
 
           <article className="side__article">
-            <h3 className="side__header">The Downsides of AI Artistry</h3>
+            <h3 className="side__header">
+              <a href="#">The Downsides of AI Artistry</a>
+            </h3>
             <p className="side__text">
               What are the possible adverse effects of on-demand AI image
               generation?
@@ -79,7 +93,9 @@ function App() {
           </article>
 
           <article className="side__article">
-            <h3 className="side__header">Is VC Funding Drying Up?</h3>
+            <h3 className="side__header">
+              <a href="#">Is VC Funding Drying Up?</a>
+            </h3>
             <p className="side__text">
               Private funding by VC firms is down 50% YOY. We take a look at
               what that means.

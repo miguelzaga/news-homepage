@@ -33,6 +33,9 @@
     font-size: rem(20px);
     line-height: 1.2;
     margin-bottom: 8px;
+    & a:hover {
+      color: $yellow;
+    }
   }
 
   &__text {
