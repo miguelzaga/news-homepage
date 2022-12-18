@@ -6,30 +6,8 @@ body {
 
 a,
 button {
+  transition: 0.2s;
   position: relative;
-  transition: 0.2s ease-in;
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: all 0.5s;
-    box-shadow: 0 0 10px 10px $light-vermillion;
-  }
-
-  &:active:after {
-    box-shadow: 0 0 0 0 white;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 1;
-    transition: 0s;
-  }
-
   &:active {
     top: 1px;
   }
@@ -45,4 +23,25 @@ a {
 
 button {
   cursor: pointer;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    box-shadow: 0 0 10px 20px $light-vermillion;
+  }
+
+  &:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+  }
 }
