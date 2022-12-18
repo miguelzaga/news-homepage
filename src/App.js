@@ -113,7 +113,9 @@ function App() {
           />
           <div className="bottom__container">
             <h4 className="bottom__number">01</h4>
-            <h5 className="bottom__title">Reviving Retro PCs</h5>
+            <h5 className="bottom__title">
+              <a href="#">Reviving Retro PCs</a>
+            </h5>
             <p className="bottom__text">
               What happens when old PCs are given modern upgrades?
             </p>
@@ -128,7 +130,9 @@ function App() {
           />
           <div className="bottom__container">
             <h4 className="bottom__number">02</h4>
-            <h5 className="bottom__title">Top 10 Laptops of 2022</h5>
+            <h5 className="bottom__title">
+              <a href="#">Top 10 Laptops of 2022</a>
+            </h5>
             <p className="bottom__text">
               Our best picks for various needs and budgets.
             </p>
@@ -143,7 +147,9 @@ function App() {
           />
           <div className="bottom__container">
             <h4 className="bottom__number">03</h4>
-            <h5 className="bottom__title">The Growth of Gaming</h5>
+            <h5 className="bottom__title">
+              <a href="#">The Growth of Gaming</a>
+            </h5>
             <p className="bottom__text">
               How the pandemic has sparked fresh opportunities.
             </p>
