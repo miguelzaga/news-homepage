@@ -38,6 +38,7 @@
     background: #{$dark-space-blue}80;
     &--open {
       display: block;
+      z-index: 2;
     }
     @include breakpoint($md) {
       display: block;
